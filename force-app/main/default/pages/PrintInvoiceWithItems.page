@@ -1,0 +1,100 @@
+<apex:page controller="PrintInvoiceWithItemsController" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" renderAs="pdf">
+
+	<!-- <apex:stylesheet value="{!$Resource.PrintInvoiceWithItemsStyles}"/> -->
+
+	<html>
+		<head>
+			<style>
+				.main-container {
+					text-align: center;
+					font-family: 'Verdana';
+					font-size: 11 px;
+					color: black;
+				}
+				
+				th, td {
+					text-align: left;
+					font-family: 'Verdana';
+				}
+				
+				table, td, tr, th thead, tbody {
+					border: 0 px;
+				}
+
+				table {
+					width: 100%;
+					table-layout : fixed;
+				}
+
+				.container {
+					display: flex;
+					justify-content: center;
+				}
+
+				div {
+					font-family: 'Verdana';
+				}
+			</style>
+		</head>
+		<body>
+			<div class="main-container">
+
+				<apex:image id="logo-el-trebol" value="{!$Resource.LogoElTrebol}" height="60"/>
+				<br/>
+				<div><b>Cafetería El Trebol</b></div>
+				<div>Productos Artesanales</div>
+		
+				<br/>
+				<br/>
+		
+				<div>NIT: 1045874511</div>
+				<div>Dirección: Carrera 27 No 23-56, Yopal, Casanare</div>
+				<div>Tel: +573142574812</div>
+		
+				<br/>
+				<br/>
+		
+				<div>Comprobante Número: {!invoice.Name}</div>
+				<div>Fecha y Hora: &nbsp;&nbsp; <apex:outputField value="{!invoice.LastModifiedDate}"/></div>
+				<br/>
+		
+				<div class="container">
+					<div class="center"> 
+						<table>
+							<col style="width:40%"/>
+							<col style="width:15%"/>
+							<col style="width:20%"/>
+							<col style="width:25%"/>
+							<thead>
+								<tr>
+									<th>Producto </th>
+									<th>Cantidad </th>
+									<th>Precio Unitario </th>
+									<th>Sub Total </th>
+								</tr>
+							</thead>
+							<tbody>
+								<apex:repeat value="{!invoiceItems}" var="item" id="invoiceItemRepeat">
+									<tr>
+										<td>{!item.Product_Name__c} </td>
+										<td>{!item.Quantity__c} </td>
+										<td>{!item.Unit_Price__c} </td>
+										<td>{!item.Sub_Total__c} </td>
+									</tr>
+								</apex:repeat>
+							</tbody>
+						</table>
+					</div>
+				</div>
+		
+				<br/>
+				<br/>
+		
+				<div><b>TOTAL</b></div>
+				<br/>	
+				<div><b>${!invoice.Total__c}</b></div>
+			
+			</div>
+		</body>
+	</html>
+</apex:page>

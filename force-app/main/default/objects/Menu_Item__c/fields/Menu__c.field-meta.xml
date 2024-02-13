@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Menu__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Menu</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>El Menu debe estar activado antes de usarlo. Porfavor, active el Menu checkeando su campo &apos;Activo&apos;</errorMessage>
+        <filterItems>
+            <field>Menu__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Menu__c</referenceTo>
+    <relationshipLabel>Menu Items</relationshipLabel>
+    <relationshipName>Menu_Items</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

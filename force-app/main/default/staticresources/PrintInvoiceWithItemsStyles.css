@@ -1,0 +1,13 @@
+.main-container {
+	align-content: center;
+	font-family: 'Lucida Sans Unicode';
+	font-size: 11 px;
+}
+
+tr {
+	align-content: left;
+}
+
+table, td, tr, th thead, tbody {
+	border: 0 px;
+}
