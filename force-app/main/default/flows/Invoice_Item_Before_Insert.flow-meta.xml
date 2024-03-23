@@ -36,7 +36,7 @@
         <expression>ISNEW()</expression>
     </formulas>
     <interviewLabel>Invoice Item Before Insert {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Invoice Item Before Insert</label>
+    <label>El Trebol - Invoice Item Before Insert</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>

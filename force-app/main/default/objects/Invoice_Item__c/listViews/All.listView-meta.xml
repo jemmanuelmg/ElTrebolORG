@@ -6,7 +6,6 @@
     <columns>Unit_Price__c</columns>
     <columns>Product_Name__c</columns>
     <columns>Discount_Amount__c</columns>
-    <columns>Invoice__c</columns>
     <columns>Product__c</columns>
     <columns>CREATED_DATE</columns>
     <columns>LAST_UPDATE</columns>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <customButtons>Print_Invoice</customButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -11,10 +10,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Order__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Total__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -77,16 +72,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Product_Name__c</fields>
-        <fields>Quantity__c</fields>
-        <fields>Unit_Price__c</fields>
-        <fields>CREATED_DATE</fields>
-        <relatedList>Invoice_Item__c.Invoice__c</relatedList>
-        <sortField>CREATED_DATE</sortField>
-        <sortOrder>Asc</sortOrder>
-    </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <fields>Amount__c</fields>

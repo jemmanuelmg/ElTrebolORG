@@ -162,11 +162,11 @@
     </nameField>
     <pluralLabel>Invoice Items</pluralLabel>
     <searchLayouts>
+        <searchResultsAdditionalFields>Table_Position__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Product_Name__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Quantity__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Unit_Price__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Product__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Invoice__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
     </searchLayouts>

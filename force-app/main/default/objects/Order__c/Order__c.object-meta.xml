@@ -167,9 +167,8 @@
     </nameField>
     <pluralLabel>Orders</pluralLabel>
     <searchLayouts>
-        <searchResultsAdditionalFields>Table__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Table_Position__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Table_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Table__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>

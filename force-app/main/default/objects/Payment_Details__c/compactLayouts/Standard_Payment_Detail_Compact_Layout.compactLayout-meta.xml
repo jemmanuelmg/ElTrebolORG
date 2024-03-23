@@ -4,7 +4,6 @@
     <fields>Name</fields>
     <fields>Amount__c</fields>
     <fields>Payment_Method_Name__c</fields>
-    <fields>Payment__c</fields>
     <fields>Payment_Method__c</fields>
     <label>Standard Payment Detail Compact Layout</label>
 </CompactLayout>

@@ -4,7 +4,6 @@
     <columns>NAME</columns>
     <columns>Amount__c</columns>
     <columns>Payment_Method_Name__c</columns>
-    <columns>Payment__c</columns>
     <columns>Payment_Method__c</columns>
     <columns>CREATED_DATE</columns>
     <columns>LAST_UPDATE</columns>

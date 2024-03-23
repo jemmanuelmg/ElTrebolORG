@@ -169,7 +169,6 @@
     <searchLayouts>
         <searchResultsAdditionalFields>Order__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Invoice__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Amount__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
     </searchLayouts>

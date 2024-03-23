@@ -161,9 +161,8 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Table</label>
     <nameField>
-        <displayFormat>T-{00}</displayFormat>
         <label>Table Name</label>
-        <type>AutoNumber</type>
+        <type>Text</type>
     </nameField>
     <pluralLabel>Tables</pluralLabel>
     <searchLayouts>

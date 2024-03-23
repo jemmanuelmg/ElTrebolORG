@@ -1,4 +1,4 @@
-<apex:page controller="PrintInvoiceWithItemsController" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" renderAs="pdf">
+<apex:page controller="PrintOrderWithItemsController" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" renderAs="pdf">
 
     <!-- <apex:stylesheet value="{!$Resource.PrintInvoiceWithItemsStyles}"/> -->
 
@@ -49,13 +49,13 @@
         
                 <div>NIT: 53.058.049</div>
                 <div>Dirección: Condominio Villa del palmar, Morichal, Casanare</div>
-                <div>Tel:</div>
+                <div>Tel: 3192932991</div>
         
                 <br/>
                 <br/>
         
-                <div>Comprobante Número: {!invoice.Name}</div>
-                <div>Fecha y Hora: &nbsp;&nbsp; <apex:outputField value="{!invoice.LastModifiedDate}"/></div>
+                <div>Comprobante Número: {!order.Name}</div>
+                <div>Fecha y Hora: &nbsp;&nbsp; <apex:outputField value="{!order.LastModifiedDate}"/></div>
                 <br/>
         
                 <div class="container">
@@ -89,7 +89,7 @@
         
                 <div><b>Total</b></div>
                 <br/>   
-                <div><b>${!invoice.Total__c}</b></div>
+                <div><b>${!order.Total__c}</b></div>
             
             </div>
         </body>

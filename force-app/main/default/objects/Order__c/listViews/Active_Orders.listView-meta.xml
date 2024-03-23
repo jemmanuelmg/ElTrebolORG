@@ -14,5 +14,5 @@
         <operation>equals</operation>
         <value>Activa</value>
     </filters>
-    <label>Active Orders</label>
+    <label>Órdenes Activas</label>
 </ListView>
